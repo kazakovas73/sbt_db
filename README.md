@@ -2,7 +2,7 @@
 Repo for homework
 
 # HW 1
-Сначала я создал Dockerfile, который создает контейнер с образом mongo и скачал json датасет с песнями репера Дрейка. Потом создал контейнер из образа и запустил его, также запустил mongo shedd, где подгрузил датасет и провел CRUD операции.
+Сначала я создал Dockerfile, который создает контейнер с образом mongo и скачал json датасет с песнями репера Дрейка. Потом создал контейнер из образа и запустил его, также запустил mongo shell, где подгрузил датасет и провел CRUD операции.
 
 - docker build -t mongo .
 <img width="518" alt="Снимок экрана 2024-03-13 191002" src="https://github.com/kazakovas73/sbt_db/assets/71931438/bda299ca-f480-4c4b-8da0-918c7920b3e5">
@@ -36,6 +36,11 @@ Repo for homework
 - db.drake_data.deleteOne({track_views: "1"}) 
 <img width="281" alt="Снимок экрана 2024-03-13 194100" src="https://github.com/kazakovas73/sbt_db/assets/71931438/315719fa-8a81-41fc-a2de-cfde69706487">
 
+- db.drake_data.find({lyrics: {$regex: "my life and"}}).explain("executionStats")
+- <img width="296" alt="Снимок экрана 2024-03-14 164613" src="https://github.com/kazakovas73/sbt_db/assets/71931438/1d4f58e7-7b13-4e15-8926-012f06cb9229">
+
+- db.drake_data.createIndex({lyrics:1})
+- У меня оказался слишком маленький датасет, поэтому executionTimeMillisEstimate одинаковый для операции find по конкрктному значению, а regex из прошлого пункта в 5 раз медленнее стал работать.
 
 
 # HW 0
