@@ -1,6 +1,23 @@
 # sbt_db
 Repo for homework
 
+# HW 3
+- Создал БД и добавил запись
+![Снимок экрана (5)](https://github.com/kazakovas73/sbt_db/assets/71931438/5641bc60-e0b8-4b7b-b0e8-ac960ef59cd3)
+
+- Подключился к БД в коде
+![Снимок экрана 2024-04-11 233219](https://github.com/kazakovas73/sbt_db/assets/71931438/ea735c7f-277a-4666-9421-257cafc64d7e)
+
+- Проверил, что фамилия есть
+![Снимок экрана (7)](https://github.com/kazakovas73/sbt_db/assets/71931438/0bf91868-e0c3-4bfe-b543-0d32c5d4e385)
+
+- Остановил сервер
+![Снимок экрана 2024-04-11 232935](https://github.com/kazakovas73/sbt_db/assets/71931438/9f4ce3b0-929e-40b4-8eff-0692ac8a3e8b)
+
+- Проверил, что фамилия осталась
+![Снимок экрана (8)](https://github.com/kazakovas73/sbt_db/assets/71931438/552c110f-74f9-4de7-b6d7-9bd57dfdb86f)
+
+
 # HW 2
 Сохранил большой JSON (>40МБ) в виде разных структур - строка, hset, zset, list и протестировал скорость сохранения и чтения
 ![image](https://github.com/kazakovas73/sbt_db/assets/71931438/bb01df59-ed81-4a73-acf0-430fdb2e6324)
